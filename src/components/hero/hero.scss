@@ -31,12 +31,23 @@
         }
     }
 
+    .slideTextContainer{
+        position: absolute;
+        bottom: -120px;
+        font-size: 50vh;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 100%;
+        font-weight: bold;
+    }
+
 
     .imageContainer{
         height: 100%;
         position: absolute;
         top: 0;
-        right: 150px;
+        right: 100px;
+
 
         img{
             height: 90%;
