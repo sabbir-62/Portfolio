@@ -36,16 +36,21 @@ const Hero = () => {
     <div className="hero">
       <div className="wrapper">
         <motion.div className="textContainer" variants={textVariant} initial="initial" animate="animate">
-          <motion.h1 variants={textVariant} initial="initial" animate="animate">Hello, I'm Sabbir Hossain</motion.h1>
+          <motion.h1 variants={textVariant} initial="initial" animate="animate">Hello, I'm <span className="name">Sabbir Hossain</span></motion.h1>
           <motion.h2 variants={textVariant} initial="initial" animate="animate">Full Stack Web Developer</motion.h2>
+          <motion.div className="buttons" variants={textVariant} initial="initial" animate="animate">
+            <motion.a href="" className="button" variants={textVariant} initial="initial" animate="animate">Download Resume</motion.a>
+            <motion.a href="#Contact" className="button" variants={textVariant} initial="initial" animate="animate">Let's Talk</motion.a>
         </motion.div>
+        </motion.div>
+        
       </div>
-      <motion.div className="slideTextContainer" variants={sliderVariants} intial="initial" animate= "animate">
+      <motion.div className="slideTextContainer" variants={sliderVariants} initial="initial" animate= "animate">
         A Full Stack Web Developer
       </motion.div>
-      <div className="imageContainer">
-        <img src={hero} alt="Hero image" />
-      </div>
+      <motion.div className="imageContainer" variants={textVariant} initial="initial" animate="animate">
+        <img src={hero} alt="Hero image"/>
+      </motion.div>
     </div>
   );
 };
