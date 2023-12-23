@@ -7,17 +7,17 @@ import Parallax from "./components/parallax/Parallax";
 function App() {
   return (
     <div>
-      <section id="Homepage">
+      <section id="Home">
         <Navbar />
         <Hero />
       </section>
-      <section id="Services"><Parallax type="services"/></section>
-      <section>Services</section>
-      <section id="Portfolio"><Parallax type="portfolio"/></section>
+      <section id="About"><Parallax type="about"/></section>
+      <section>Education</section>
+      <section id="Education"><Parallax type="education"/></section>
       <section>Portfolio1</section>
       <section>Portfolio2</section>
+      <section id="Skills">Skills</section>
       <section id="Contact">Contact</section>
-      <section id="About">Contact</section>
     </div>
   );
 }
