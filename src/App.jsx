@@ -12,8 +12,9 @@ function App() {
         <Hero />
       </section>
       <section id="About"><Parallax type="about"/></section>
-      <section>Education</section>
+      <section>About</section>
       <section id="Education"><Parallax type="education"/></section>
+      <section>Education</section>
       <section>Portfolio1</section>
       <section>Portfolio2</section>
       <section id="Skills">Skills</section>

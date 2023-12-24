@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const ToggoleButton = ({ setOpen }) => {
   return (
-    <button onClick={() => setOpen((prev) => !prev)}>
-      <svg width="23" height="23" viewBox="0 0 25 25" style={{marginTop: "8px"}}>
+    <button  onClick={() => setOpen((prev) => !prev)}>
+      <svg width="23" height="23"  style={{marginTop: "8px"}}>
         <motion.path
           strokeWidth="3"
           stroke="black"

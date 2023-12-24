@@ -1,0 +1,13 @@
+.parallax{
+    background-image: url("../../assets/about.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 100px;
+    }
+}
