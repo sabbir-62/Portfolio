@@ -1,6 +1,7 @@
 import "./hero.scss";
 import hero from "../../assets/sabbir.png";
 import { motion } from 'framer-motion';
+import TextAnimation from "./TextAnimation";
 
 const textVariant = {
     initial: {
@@ -37,7 +38,7 @@ const Hero = () => {
       <div className="wrapper">
         <motion.div className="textContainer" variants={textVariant} initial="initial" animate="animate">
           <motion.h1 variants={textVariant} initial="initial" animate="animate">Hello, I'm <span className="name">Sabbir Hossain</span></motion.h1>
-          <motion.h2 variants={textVariant} initial="initial" animate="animate">Full Stack Web Developer</motion.h2>
+          <motion.h2 variants={textVariant} initial="initial" animate="animate"><TextAnimation /></motion.h2>
           <motion.div className="buttons" variants={textVariant} initial="initial" animate="animate">
             <motion.a href="" className="button" variants={textVariant} initial="initial" animate="animate">Download Resume</motion.a>
             <motion.a href="#Contact" className="button" variants={textVariant} initial="initial" animate="animate">Let's Talk</motion.a>
