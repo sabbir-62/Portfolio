@@ -9,8 +9,7 @@ const Parallax = ({type}) => {
         offset: ["start start", "end start"]
     })
 
-    const yBg = useTransform(scrollYProgress, [0,1], ["0%", "250%"])
-    const ybg = useTransform(scrollYProgress, [0,1], ["0%", "550%"])
+    const yBg = useTransform(scrollYProgress, [0,1], ["0%", "350%"])
 
 
     return (

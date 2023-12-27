@@ -3,7 +3,9 @@ import "./about.scss"
 const About = () => {
     return (
         <div className="about">
-            This is about page
+            <div className="header">
+                About Me
+            </div>
         </div>
     );
 };
