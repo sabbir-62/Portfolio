@@ -80,6 +80,21 @@
             color: gray;
             font-size: 20px;
         }
+
+        button{
+            width: 250px;
+            background: none;
+            border: 1px solid #ffd104;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 8px;
+            color: #ffd104;
+            cursor: pointer;
+        }
+        button:hover{
+            border: 1px solid #fff;
+            color: #fff;
+        }
       }
     }
   }

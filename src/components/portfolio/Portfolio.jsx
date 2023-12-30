@@ -38,6 +38,7 @@ const Item = ({ item }) => {
           <motion.div className="textContainer" style={{y: y}}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
+            <button>Details</button>
           </motion.div>
         </div>
       </div>
