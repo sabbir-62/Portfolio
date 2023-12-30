@@ -49,9 +49,9 @@ const Hero = () => {
       <motion.div className="slideTextContainer" variants={sliderVariants} initial="initial" animate= "animate">
         A Full Stack Web Developer
       </motion.div>
-      <motion.div className="imageContainer" variants={textVariant} initial="initial" animate="animate">
+      {/* <motion.div className="imageContainer" variants={textVariant} initial="initial" animate="animate">
         <img src={hero} alt="Hero image"/>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
