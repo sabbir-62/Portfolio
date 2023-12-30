@@ -1,16 +1,32 @@
 import "./about.scss";
 import sabbir from "../../assets/sabbir2.png";
+import { motion } from 'framer-motion';
 
 const About = () => {
+
+  const textVariant = {
+    initial: {
+        //  x: -500,
+        opacity: 0
+    },
+    animate:{
+        x: 0,
+        opacity: 1,
+        transition:{
+            duration: 2,
+            staggerChildren: 0.1
+        }
+    }
+}
   return (
-    <div className="about">
-      <div className="box">
-        <div className="header">
+    <motion.div className="about" variants={textVariant} initial="initial" whileInView="animate">
+      <motion.div className="box" variants={textVariant} initial="initial" whileInView="animate">
+        <motion.div className="header" variants={textVariant} initial="initial" whileInView="animate">
           About <span>Me</span>
-        </div>
-        <img src={sabbir} alt="" />
-        <h1>Full Stack Web Developer</h1>
-        <p>
+        </motion.div>
+        <motion.img src={sabbir} alt=""  variants={textVariant} initial="initial" whileInView="animate"/>
+        <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Full Stack Web Developer</motion.h1>
+        <motion.p variants={textVariant} initial="initial" whileInView="animate">
           Hi, I'm a MERN Full Stack Web Developer. I like building
           websites using MongoDB, Express.js, React, and Node.js. I find joy in
           solving problems, especially when working together with others. Making
@@ -19,9 +35,9 @@ const About = () => {
           parts that users see and the behind-the-scenes stuff. I'm excited to
           be part of projects that are creative and innovative. Let's team up
           and bring some awesome ideas to life on the web!
-        </p>
-      </div>
-    </div>
+        </motion.p>
+      </motion.div>
+    </motion.div>
   );
 };
 

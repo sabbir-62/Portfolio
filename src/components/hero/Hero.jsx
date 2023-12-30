@@ -23,7 +23,7 @@ const sliderVariants = {
         x: 0
     },
     animate:{
-        x: "-210%",
+        x: "-220%",
         transition:{
             repeat: Infinity,
             repeatType: "mirror",
@@ -36,12 +36,12 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="wrapper">
-        <motion.div className="textContainer" variants={textVariant} initial="initial" animate="animate">
-          <motion.h1 variants={textVariant} initial="initial" animate="animate">Hello, I'm <span className="name">Sabbir Hossain</span></motion.h1>
-          <motion.h2 variants={textVariant} initial="initial" animate="animate"><TextAnimation /></motion.h2>
-          <motion.div className="buttons" variants={textVariant} initial="initial" animate="animate">
-            <motion.a href="" className="button" variants={textVariant} initial="initial" animate="animate">Download Resume</motion.a>
-            <motion.a href="#Contact" className="button" variants={textVariant} initial="initial" animate="animate">Let's Talk</motion.a>
+        <motion.div className="textContainer" variants={textVariant} initial="initial" whileInView="animate">
+          <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Hello, I'm <span className="name">Sabbir Hossain</span></motion.h1>
+          <motion.h2 variants={textVariant} initial="initial" whileInView="animate"><TextAnimation /></motion.h2>
+          <motion.div className="buttons" variants={textVariant} initial="initial" whileInView="animate">
+            <motion.a href="" className="button" variants={textVariant} initial="initial" whileInView="animate">Download Resume</motion.a>
+            <motion.a href="#Contact" className="button" variants={textVariant} initial="initial" whileInView="animate">Let's Talk</motion.a>
         </motion.div>
         </motion.div>
         
