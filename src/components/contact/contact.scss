@@ -32,12 +32,14 @@
         stroke: #ffd104;
         position: absolute;
         margin: auto;
+        z-index: -1;
     }
 
     form {
       display: flex;
       flex-direction: column;
       gap: 20px;
+    
 
       input, textarea {
         padding: 20px;
@@ -45,6 +47,7 @@
         border: 1px solid #fff;
         color: #fff;
         border-radius: 5px;
+        
       }
 
       button{
@@ -56,6 +59,7 @@
         font-weight: 500;
         cursor: pointer;
         border-radius: 5px;
+        
       }
 
       button:hover{

@@ -1,7 +1,10 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
+
+//Variant Object
 const variants = {
   initial: {
     y: 500,
@@ -17,9 +20,32 @@ const variants = {
   },
 };
 
+
+/*----------Contact Component----------*/
 const Contact = () => {
   const ref = useRef();
+  const formRef = useRef();
+  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
+
   const isInView = useInView(ref, { margin: "-100px" });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0g9hrve', 'template_gtxisgk', formRef.current, '-EEUZ92SfTCI3Yamg')
+      .then((result) => {
+          setSuccess(true)
+      }, (error) => {
+          setError(true)
+      });
+  };
+
+
+
+
+
+//Return JSX
   return (
     <motion.div
       ref={ref}
@@ -50,11 +76,7 @@ const Contact = () => {
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <svg
-            height="450px"
-            width="450px"
-            viewBox="0 0 512 512"
-          >
+          <svg height="450px" width="450px" viewBox="0 0 512 512">
             <g>
               <motion.path
                 strokeWidth={2}
@@ -103,18 +125,24 @@ const Contact = () => {
           </svg>
         </motion.div>
         <motion.form
+        ref={formRef}
+        onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea rows={8} placeholder="Message" />
+          <input type="text" name="name" placeholder="Enter Your Name" />
+          <input type="email" name="email" placeholder="Enter Your Email" />
+          <textarea rows={8} name="message" placeholder="Message" />
           <button>Submit</button>
+          {error && "Error"}
+          {success && "Success"}
         </motion.form>
       </div>
     </motion.div>
   );
 };
 
+
+//Export Contact component
 export default Contact;
