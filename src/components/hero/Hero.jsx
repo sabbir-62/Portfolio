@@ -5,7 +5,7 @@ import TextAnimation from "./TextAnimation";
 
 const textVariant = {
     initial: {
-        x: -500,
+        x: -300,
         opacity: 0
     },
     animate:{
@@ -40,8 +40,8 @@ const Hero = () => {
           <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Hello, I'm <span className="name">Sabbir Hossain</span></motion.h1>
           <motion.h2 variants={textVariant} initial="initial" whileInView="animate"><TextAnimation /></motion.h2>
           <motion.div className="buttons" variants={textVariant} initial="initial" whileInView="animate">
-            <motion.a href="" className="button" variants={textVariant} initial="initial" whileInView="animate">Download Resume</motion.a>
-            <motion.a href="#Contact" className="button" variants={textVariant} initial="initial" whileInView="animate">Let's Talk</motion.a>
+            <motion.a href="" className="button" >Download Resume</motion.a>
+            <motion.a href="#Contact" className="button" >Let's Talk</motion.a>
         </motion.div>
         </motion.div>
         

@@ -1,3 +1,6 @@
+@import "../../App.scss";
+
+
 .about{
     display: flex;
     flex-direction: column;
@@ -13,6 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 50px 0;
 
         .header{
             font-size: 60px;
