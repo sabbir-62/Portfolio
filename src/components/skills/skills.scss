@@ -1,19 +1,29 @@
 .skills-container{
     // background: linear-gradient(#122E43, #07131C);
-    margin: 4rem;
-    position: relative; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
     h5{
+        position: absolute;
         font-size: 60px;
         font-weight: 600;
-        margin-bottom: 3.5rem;
+        text-align: center;
+        top: 5rem;
+
+        span{
+            color: #ffd104;
+        }
     }
 
 
     .skills-content{
+        width: 90%;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 3rem;
 
 

@@ -9,6 +9,7 @@ const SkillCard = ({iconUrl, title, isActive, onClick}) => {
 
             <span>{title}</span>
             
+            
         </div>
     );
 };
