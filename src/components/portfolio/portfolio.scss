@@ -19,12 +19,16 @@
     left: 0;
     padding-top: 30px;
     text-align: center;
-    color: #ffd104;
+    
 
 
     h1 {
       font-size: 60px;
       font-weight: 600;
+
+      span{
+        color: #ffd104;
+      }
   
 
       @include mobile{
