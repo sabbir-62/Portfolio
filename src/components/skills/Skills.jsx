@@ -47,7 +47,7 @@ const Skills = () => {
 
   return (
     <section className="skills-container">
-      <motion.h5 variants={textVariant} initial="initial" whileInView="animate">My <span>Skills</span></motion.h5>
+      <motion.h5 >My <span>Skills</span></motion.h5>
       <div className="skills-content">
         <motion.div className="skills" variants={textVariant} initial="initial" whileInView="animate">
           {SKILLS.map((item, i) => {

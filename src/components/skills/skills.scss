@@ -1,3 +1,6 @@
+@import "../../App.scss";
+
+
 .skills-container{
     // background: linear-gradient(#122E43, #07131C);
     position: relative;
@@ -5,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 
 
     h5{
@@ -17,6 +21,11 @@
         span{
             color: #ffd104;
         }
+
+        @include mobile{
+            top: 3rem;
+            font-size: 40px;
+        }
     }
 
 
@@ -27,16 +36,36 @@
         gap: 3rem;
 
 
+        @include mobile{
+            flex-direction: column;
+            
+        }
+        
+
+
 
         .skills{
             flex: 1;
             display: grid;
             gap: 3rem;
             grid-template-columns: repeat(2, 1fr);
+           
+           
+
+
+            @include mobile{
+                margin-top: 12rem;
+                width: 100%;
+            }
         }
 
         .skills-info{
             flex: 1;
+
+            @include mobile{
+                
+                width: 100%;
+            }
         }
     }
 }

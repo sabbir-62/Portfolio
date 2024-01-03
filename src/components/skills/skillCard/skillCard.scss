@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .skills-card{
     border-radius: .65rem;
     background: linear-gradient(180deg, #081b29 0%, #036685 100%);
@@ -39,6 +41,11 @@
     span{
         font-size: 30px;
         font-weight: 500;
+
+
+        @include mobile{
+            font-size: 20px;
+        }
     }
 }
 
