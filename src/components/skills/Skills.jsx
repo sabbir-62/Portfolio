@@ -21,21 +21,6 @@ const textVariant = {
     }
 }
 
-const skillInfo = {
-    initial: {
-        x: 300,
-        opacity: 0
-    },
-    animate:{
-        x: 0,
-        opacity: 1,
-        transition:{
-            duration: 1,
-            staggerChildren: 0.1
-        }
-    }
-}
-
 
 
 const Skills = () => {
@@ -64,7 +49,7 @@ const Skills = () => {
             );
           })}
         </motion.div>
-        <motion.div className="skills-info" variants={skillInfo} initial="initial" whileInView="animate">
+        <motion.div className="skills-info" variants={textVariant} initial="initial" whileInView="animate">
           <SkillsInfoCard
             heading={selectSkill.title}
             skills={selectSkill.skills}
