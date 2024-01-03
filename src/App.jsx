@@ -7,6 +7,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 import Skills from "./components/skills/Skills";
+import Education from "./components/education/Education";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Hero />
       </section>
       <section id="About"><About /></section>
-      {/* <section id="Education">Education</section> */}
+      <section id="Education"><Education /></section>
       <section id="Skills"><Skills /></section>
       <section id="Works"><Portfolio /></section>
       <section id="Contact"><Contact /></section>

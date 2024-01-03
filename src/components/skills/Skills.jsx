@@ -21,6 +21,21 @@ const textVariant = {
     }
 }
 
+const headerVariant = {
+  initial: {
+      //  x: -500,
+      opacity: 0
+  },
+  animate:{
+      x: 0,
+      opacity: 1,
+      transition:{
+          duration: 2,
+          staggerChildren: 0.1
+      }
+  }
+}
+
 
 
 const Skills = () => {
@@ -32,7 +47,7 @@ const Skills = () => {
 
   return (
     <section className="skills-container">
-      <motion.h5 >My <span>Skills</span></motion.h5>
+      <motion.h5 variants={headerVariant} initial="initial" whileInView="animate">My <span>Skills</span></motion.h5>
       <div className="skills-content">
         <motion.div className="skills" variants={textVariant} initial="initial" whileInView="animate">
           {SKILLS.map((item, i) => {

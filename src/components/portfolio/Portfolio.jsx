@@ -28,6 +28,7 @@ const Item = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
+
   return (
     <section className="portfolioSection">
       <div className="container">
@@ -46,6 +47,22 @@ const Item = ({ item }) => {
   );
 };
 
+
+const headerVariant = {
+  initial: {
+      //  x: -500,
+      opacity: 0
+  },
+  animate:{
+      x: 0,
+      opacity: 1,
+      transition:{
+          duration: 2,
+          staggerChildren: 0.1
+      }
+  }
+}
+
 const Portfolio = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
@@ -61,7 +78,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>My <span>Works</span></h1>
+        <motion.h1 variants={headerVariant} initial="initial" whileInView="animate">My <span>Works</span></motion.h1>
         <motion.div
           style={{ scaleX: scaleX }}
           className="progressBar"
