@@ -10,13 +10,13 @@ const items = [
     title: "Blog Website",
     image: blog,
     description:
-      "The blog website presents a well-organized and visually appealing platform with diverse content spanning technology, lifestyle, science, and entertainment. Its user-friendly interface ensures easy navigation, allowing readers to explore trending and latest posts effortlessly. Authors contribute engaging pieces complemented by captivating visuals, enriching the overall storytelling experience.",
+      "The blog website presents a well-organized and visually appealing platform with diverse content spanning technology, lifestyle, science, and entertainment.",
   },
   {
     id: 2,
     title: "HSTU Alumni Website",
     image: alumni,
-    description: "The varsity alumni association serves as a vibrant network connecting graduates, fostering a sense of camaraderie among former students. Through engaging events, reunions, and communication channels, the association facilitates ongoing connections and collaborations. Alumni benefit from career networking opportunities, mentorship programs, and exclusive access to university updates. The association plays a pivotal role in preserving institutional traditions while actively contributing to the growth and development of its members. By promoting a lifelong bond between alumni and their alma mater, the varsity alumni association creates a dynamic community dedicated to shared experiences and ongoing support.",
+    description: "The varsity alumni association serves as a vibrant network connecting graduates, fostering a sense of camaraderie among former students.",
   },
 ];
 
