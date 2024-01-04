@@ -75,6 +75,11 @@
             color: gray;
             text-align: center;
             font-size: 20px;
+
+
+            @include mobile{
+                text-align: justify;
+            }
         }
     }
     
