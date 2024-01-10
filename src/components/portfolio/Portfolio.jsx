@@ -3,14 +3,14 @@ import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import alumni from "../../assets/hstu-alumni.png";
 import blog from "../../assets/blog.png";
+import media from "../../assets/social-media.jpg";
 
 const items = [
   {
     id: 1,
     title: "Blog Website",
     image: blog,
-    description:
-      "The blog website presents a well-organized and visually appealing platform with diverse content spanning technology, lifestyle, science, and entertainment.",
+    description:"The blog website presents a well-organized and visually appealing platform with diverse content spanning technology, lifestyle, science, and entertainment.",
   },
   {
     id: 2,
@@ -18,6 +18,12 @@ const items = [
     image: alumni,
     description: "The varsity alumni association serves as a vibrant network connecting graduates, fostering a sense of camaraderie among former students.",
   },
+  {
+    id: 3,
+    title: "Social Book Server",
+    image: media,
+    description: "Social media connects people worldwide, facilitating instant communication and information sharing. However, it also raises concerns about privacy, misinformation, and the impact on mental health."
+  }
 ];
 
 const Item = ({ item }) => {
