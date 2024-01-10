@@ -9,6 +9,8 @@ import Cursor from "./components/cursor/Cursor";
 import Skills from "./components/skills/Skills";
 import Education from "./components/education/Education";
 
+
+
 function App() {
   return (
     <div>

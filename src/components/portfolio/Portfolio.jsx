@@ -4,55 +4,34 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import alumni from "../../assets/hstu-alumni.png";
 import blog from "../../assets/blog.png";
 import media from "../../assets/social-media.jpg";
+import { useNavigate } from "react-router-dom";
 
+// Items
 const items = [
   {
     id: 1,
     title: "Blog Website",
     image: blog,
-    description:"The blog website presents a well-organized and visually appealing platform with diverse content spanning technology, lifestyle, science, and entertainment.",
+    description:
+      "The blog website presents a well-organized and visually appealing platform with diverse content spanning technology, lifestyle, science, and entertainment.",
   },
   {
     id: 2,
     title: "HSTU Alumni Website",
     image: alumni,
-    description: "The varsity alumni association serves as a vibrant network connecting graduates, fostering a sense of camaraderie among former students.",
+    description:
+      "The varsity alumni association serves as a vibrant network connecting graduates, fostering a sense of camaraderie among former students.",
   },
   {
     id: 3,
     title: "Social Book Server",
     image: media,
-    description: "Social media connects people worldwide, facilitating instant communication and information sharing. However, it also raises concerns about privacy, misinformation, and the impact on mental health."
-  }
+    description:
+      "Social media connects people worldwide, facilitating instant communication and information sharing. However, it also raises concerns about privacy, misinformation, and the impact on mental health.",
+  },
 ];
 
-const Item = ({ item }) => {
-  const ref = useRef();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    // offset: ["start start", "end start"]
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [-500, 250]);
-
-  return (
-    <section className="portfolioSection">
-      <div className="container">
-        <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
-            <img src={item.image} alt="Portfolio image" />
-          </div>
-          <motion.div className="textContainer" style={{ y: y }}>
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-            <button>Details</button>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
+// animation
 const headerVariant = {
   initial: {
     //  x: -500,
@@ -68,6 +47,49 @@ const headerVariant = {
   },
 };
 
+// show items
+const Item = ({ item }) => {
+  const ref = useRef();
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    // offset: ["start start", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [-500, 250]);
+
+  // navigate details page
+  const navigate = useNavigate();
+  const projectDetails = (title) => {
+    if (title === "Blog Website") {
+      navigate("/details/blog");
+    }
+    if (title === "HSTU Alumni Website") {
+      navigate("/details/alumni");
+    }
+    if (title === "Social Book Server") {
+      navigate("/details/social-media");
+    }
+  };
+
+  return (
+    <section className="portfolioSection">
+      <div className="container">
+        <div className="wrapper">
+          <div className="imageContainer" ref={ref}>
+            <img src={item.image} alt="Portfolio image" />
+          </div>
+          <motion.div className="textContainer" style={{ y: y }}>
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+            <button onClick={() => projectDetails(item.title)}>Details</button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/*----------Portfolio component----------*/
 const Portfolio = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
