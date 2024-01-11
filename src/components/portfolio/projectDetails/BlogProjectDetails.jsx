@@ -1,10 +1,14 @@
 import blog1 from "../../../assets/blog/blog1.png";
 import blog2 from "../../../assets/blog/blog2.png";
 import blog3 from "../../../assets/blog/blog3.png";
-import blog4 from "../../../assets/blog/blog4.png";
 import blog5 from "../../../assets/blog/blog5.png";
+import blog7 from "../../../assets/blog/blog7.png";
 import "./projectDetails.scss";
 import { motion } from 'framer-motion';
+
+
+
+
 
 const BlogProjectDetails = () => {
 
@@ -28,6 +32,9 @@ const BlogProjectDetails = () => {
     <div className="blog-container">
       <div className="image-container">
         <motion.div className="img"  variants={textVariant} initial="initial" whileInView="animate">
+          <img src={blog7} alt="Blog pic" />
+        </motion.div>
+        <motion.div className="img"  variants={textVariant} initial="initial" whileInView="animate">
           <img src={blog1} alt="Blog pic" />
         </motion.div>
         <motion.div className="img" variants={textVariant} initial="initial" whileInView="animate">
@@ -35,9 +42,6 @@ const BlogProjectDetails = () => {
         </motion.div>
         <motion.div className="img" variants={textVariant} initial="initial" whileInView="animate">
           <img src={blog3} alt="Blog pic" />
-        </motion.div>
-        <motion.div className="img" variants={textVariant} initial="initial" whileInView="animate">
-          <img src={blog4} alt="Blog pic" />
         </motion.div>
         <motion.div className="img" variants={textVariant} initial="initial" whileInView="animate">
           <img src={blog5} alt="Blog pic" />
