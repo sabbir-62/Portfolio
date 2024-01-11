@@ -44,34 +44,24 @@ const Education = () => {
             </header>
 
             <div className="contents">
-              <div className="box">
-                <h4>2018 - 2022</h4>
-                <h3>High School Degree</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-              </div>
 
-              <div className="box">
-                <h4>2018 - 2022</h4>
-                <h3>Bachelor's Degree</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
+            <div className="box">
+                <h4>2018 - 2023</h4>
+                <h3>BSc (Engineering) in Electronics & Communication Engineering (ECE)</h3>
+                <p>Institute: <span>Hajee Mohammad Danesh Science and Technology University, Dinajpur, Bangladesh.</span></p>
+                <p>CGPA: <span>3.320 out of 4.00.</span></p>
               </div>
-
               <div className="box">
-                <h4>2018 - 2022</h4>
-                <h3>Master Degree</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
+                <h4>2014 - 2016</h4>
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <p>Institute: <span>Mainul Hasan College, Birol, Dinajpur, Bangladesh.</span></p>
+                <p>GPA: <span>5.00 out of 5.00.</span></p>
+              </div>
+              <div className="box">
+                <h4>2012 - 2014</h4>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <p>Institute: <span>Mohana Mangalpur High School, Birol, Dinajpur, Bangladesh.</span></p>
+                <p>GPA: <span>5.00 out of 5.00.</span></p>
               </div>
             </div>
           </div>
@@ -83,33 +73,24 @@ const Education = () => {
 
             <div className="contents">
               <div className="box">
-                <h4>2018 - 2022</h4>
-                <h3>UI/UX Designer</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
+              <h4>2023 - Present</h4>
+                <h3>Web Development</h3>
+                <p>Technology: <span>I have learned React.js, Node.js, Express.js, and MongoDB.</span></p>
+                <p>Projects: <span>HSTU Alumni Association, Blog Project, Social Book.</span></p>
               </div>
 
               <div className="box">
-                <h4>2018 - 2022</h4>
-                <h3>Full-Stack Developer</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
+              <h4>2022 - 2023</h4>
+                <h3>Web Development</h3>
+                <p>Technology: <span>I have learned HTML, CSS, Bootstrap, and JavaScript.</span></p>
+                <p>Projects: <span>Personal Portfolio, Temperature Converter.</span></p>
               </div>
 
               <div className="box">
-                <h4>2018 - 2022</h4>
-                <h3>Frontend Developer</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
+              <h4>2021 - 2022</h4>
+                <h3>Problem Solving</h3>
+                <p>Language: <span>C, C++, JavaScript.</span></p>
+                <p>Online Judge: <span>URI, UVA.</span></p>
               </div>
             </div>
           </div>

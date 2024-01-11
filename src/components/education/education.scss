@@ -84,10 +84,15 @@
 	color: #e6e4e4;
 }
 .box p{
-	line-height: 1.2;
-	color: #bebebe;
+	line-height: 1.7;
 	font-size: 17px;
+	color: #11a372;
 }
+
+.box span{
+	color: #fff;
+}
+
 @media(max-width: 768px){
 	main.row{
 		grid-template-columns: 1fr;
