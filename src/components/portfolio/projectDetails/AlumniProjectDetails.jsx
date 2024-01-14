@@ -56,13 +56,13 @@ const AlumniProjectDetails = () => {
       <div className="text-container">
         <div className="key-features">
           <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Key <span>Features</span></motion.h1>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>1.</span> Users can registration and login.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>2.</span> After successfully registration, user need to login.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>3.</span> Logged in user can see their profile.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>4.</span> Also see graduates list, posts.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> Logged in users can create new post and delete, update their own post.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>6.</span> Users read others post details.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>7.</span> Users can logout.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>1.</span> Users can register and log in.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>2.</span> After successfully registration, the user needs to login.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>3.</span> Logged-in users can see their profile.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>4.</span> Also see the graduates list and posts.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> Logged-in users can create new posts, delete them, and update their own posts.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>6.</span> Users read other posts details.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>7.</span> Users can log out.</motion.p>
         </div>
       </div>
     </div>

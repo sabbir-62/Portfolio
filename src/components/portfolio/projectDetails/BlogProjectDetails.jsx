@@ -51,15 +51,23 @@ const BlogProjectDetails = () => {
       <div className="text-container">
         <div className="key-features">
           <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Key <span>Features</span></motion.h1>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>1.</span> Users can registration and login.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>2.</span> After submitting data for registration, an otp sent into user email.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>3.</span> User need to verified this otp for completing registration process.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>4.</span> After successfully registration, user need to login.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> After login user can see all blogs.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>1.</span> Users can register and log in.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>2.</span> After submitting data for registration, an OTP is sent to the user's email.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>3.</span> The user needs to verify this otp before completing the registration process.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>4.</span> After successfully registration, the user needs to login.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> After logging in, users can see all blogs.</motion.p>
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>6.</span> Users read others blog details.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>7.</span> User create new blog, update and delete their own blog.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>7.</span> The user can create a new blog, update it, and delete it.</motion.p>
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>8.</span> Users can search blogs by category.</motion.p>
-          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>9.</span> Users can logout.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>9.</span> Users can log out.</motion.p>
+        </div>
+        <div className="challenges">
+          <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Challenges <span>& Learn</span></motion.h1>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>1.</span> I could not send an OTP to the user's email. So I learned how to send OTPs to the mail and user verification by OTP.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>2.</span> I learned to reset a user's password functionality using email.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>3.</span> Learn how to pass user data from one child component to another child component using the context API.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>4.</span> Learn about framer motion library.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> Learn how to search blogs by their category.</motion.p>
         </div>
       </div>
     </div>
