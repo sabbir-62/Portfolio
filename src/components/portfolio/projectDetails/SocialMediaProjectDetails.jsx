@@ -42,6 +42,14 @@ const SocialMediaProjectDetails = () => {
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>11.</span> Users can comment on others posts.</motion.p>
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>12.</span> Users can log out.</motion.p>
         </div>
+        <div className="challenges">
+          <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Challenges <span>& Learn</span></motion.h1>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>1.</span> I learned how to work on a collaborative project.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>2.</span> Study more on git and github.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>3.</span> I learned how to work with more branches and merge code with the main branch.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>4.</span> For real-time chatting, I studied at Socket.io.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> I learned how to work with references in different collections.</motion.p>
+        </div>
       </div>
     </div>
   );
