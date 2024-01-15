@@ -64,6 +64,14 @@ const AlumniProjectDetails = () => {
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>6.</span> Users read other posts details.</motion.p>
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>7.</span> Users can log out.</motion.p>
         </div>
+        <div className="challenges">
+          <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Challenges <span>& Learn</span></motion.h1>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>1.</span> I learned how to connect the frontend with the backend.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>2.</span> Learned axios, fetch APIs, and fetch data from the backend.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>3.</span> Studied how to deploy projects into Vercel, Render, and Netlify.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>4.</span> I studied and learned how to work with cookies for user login and registration.</motion.p>
+          <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> Studied about react-spinners.</motion.p>
+        </div>
       </div>
     </div>
   );
