@@ -69,6 +69,7 @@ const BlogProjectDetails = () => {
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>4.</span> Learn about framer motion library.</motion.p>
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> Learn how to search blogs by their category.</motion.p>
         </div>
+        <div className="live-link">Live Link: <a href="https://blog-project-with-mern-zhwk.vercel.app/">  https://blog-project-with-mern-zhwk.vercel.app/</a></div>
       </div>
     </div>
   );
