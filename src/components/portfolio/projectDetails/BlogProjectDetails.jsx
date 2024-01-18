@@ -70,6 +70,7 @@ const BlogProjectDetails = () => {
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> Learn how to search blogs by their category.</motion.p>
         </div>
         <div className="live-link">Live Link: <a href="https://blog-project-with-mern-zhwk.vercel.app/">  https://blog-project-with-mern-zhwk.vercel.app/</a></div>
+        <div className="note">Note: You can login with <span>Email: sabbirhstuece@gmail.com</span> and <span>password: 12345678</span></div>
       </div>
     </div>
   );
