@@ -73,6 +73,7 @@ const AlumniProjectDetails = () => {
           <motion.p variants={textVariant} initial="initial" whileInView="animate"><span>5.</span> Studied about react-spinners.</motion.p>
         </div>
         <div className="live-link">Live Link: <a href="https://alumni-frontend-wine.vercel.app/">  https://alumni-frontend-wine.vercel.app/</a></div>
+        <div className="note">Note: You can login with <span>Email: sabbir62@gmail.com</span> and <span>password: 12345678</span></div>
       </div>
     </div>
   );
