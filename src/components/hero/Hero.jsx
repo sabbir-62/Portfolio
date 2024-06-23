@@ -2,7 +2,7 @@ import "./hero.scss";
 import hero from "../../assets/sabbir.png";
 import { motion } from 'framer-motion';
 import TextAnimation from "./TextAnimation";
-import resume from "../../assets/Sabbir_Hossain_Resume.pdf"
+import resume from "../../assets/FullStack_Developer_Sabbir_Hossain_Resume.pdf"
 
 const textVariant = {
     initial: {
