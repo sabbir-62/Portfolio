@@ -35,11 +35,12 @@
         display: flex;
         align-items: center;
         gap: 3rem;
+        margin-top: 200px;
 
 
         @include mobile{
             flex-direction: column;
-            
+            margin-top: 0px;
         }
         
 
