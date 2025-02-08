@@ -4,13 +4,17 @@ const TextAnimation = () => {
   return (
     <TypeAnimation
       sequence={[
-        'Full Stack Web Developer',
+        'Frontend Developer',
         1000,
+        'Backend Developer',
+        1500,
         'Web Designer',
         1500,
         'Coder',
         1500,
         'Programmer',
+        1500,
+        'Full Stack Web Developer',
         1500
       ]}
       wrapper="span"

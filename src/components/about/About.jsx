@@ -27,8 +27,8 @@ const About = () => {
         <motion.img src={sabbir} alt=""  variants={textVariant} initial="initial" whileInView="animate"/>
         <motion.h1 variants={textVariant} initial="initial" whileInView="animate">Full Stack Web Developer</motion.h1>
         <motion.p variants={textVariant} initial="initial" whileInView="animate">
-          Hi, I'm a MERN Full Stack Web Developer. I like building
-          websites using MongoDB, Express.js, React, and Node.js. I find joy in
+          Hi, I'm a Full Stack Web Developer. I like building
+          websites using React.Js, Next.Js, TailwindCSS, Node.Js, Nest.Js, Express.Js, MongoDB and PostgreSQL. I find joy in
           solving problems, especially when working together with others. Making
           websites that people find easy and enjoyable to use is my goal. I have
           experience creating different parts of websites, both the visible

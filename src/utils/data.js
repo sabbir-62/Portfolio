@@ -10,8 +10,11 @@ export const SKILLS = [
         skills: [
             {skill: "HTML5", percentage: "80%"},
             {skill: "CSS3 {Sass/SCSS}", percentage: "70%"},
+            {skill: "Bootstrap", percentage: "75%"},
+            {skill: "TailwindCSS", percentage: "70%"},
             {skill: "JavaScript", percentage: "65%"},
-            {skill: "React.js", percentage: "70%"},
+            {skill: "React.js", percentage: "80%"},
+            {skill: "Next.js", percentage: "70%"}
         ]
     },
     {
@@ -20,7 +23,9 @@ export const SKILLS = [
         skills: [
             {skill: "Node.js", percentage: "70%"},
             {skill: "Express.js", percentage: "65%"},
-            {skill: "MongoDB", percentage: "70%"}
+            {skill: "Nest.js", percentage: "70%"},
+            {skill: "MongoDB", percentage: "70%"},
+            {skill: "PostgreSQL", percentage: "60%"}
         ]
     },
     {

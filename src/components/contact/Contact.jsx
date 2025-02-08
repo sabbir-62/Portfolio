@@ -35,8 +35,10 @@ const Contact = () => {
 
     emailjs.sendForm('service_0g9hrve', 'template_gtxisgk', formRef.current, '-EEUZ92SfTCI3Yamg')
       .then((result) => {
+        console.log("result", result);
           setSuccess(true)
       }, (error) => {
+        console.log('error', error);
           setError(true)
       });
   };
