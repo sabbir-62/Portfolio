@@ -1,33 +1,33 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import alumni from "../../assets/hstu-alumni.png";
-import blog from "../../assets/blog.png";
-import media from "../../assets/social-media.jpg";
+import hic from "../../assets/hic.png";
+import mll from "../../assets/mll.png";
+import permisgo from "../../assets/permisgo.png";
 import { useNavigate } from "react-router-dom";
 
 // Items
 const items = [
   {
     id: 1,
-    title: "Blog Website",
-    image: blog,
+    title: "Hillside Islamic Center",
+    image: hic,
     description:
-      "The blog website presents a well-organized and visually appealing platform with diverse content spanning technology, lifestyle, science, and entertainment.",
+      "This platform serves as a digital gateway to the heart of the Islamic faith, designed for a New York-based Islamic center. It offers a rich collection of resources, including the Quran, Hadith, and Duas, allowing users to deepen their knowledge and spiritual connection. The website also provides opportunities to enrich the lives of children and their families through educational programs and courses. Additionally, visitors can stay informed about and register for a variety of meaningful Islamic events, fostering a sense of community and spiritual growth.",
   },
   {
     id: 2,
-    title: "HSTU Alumni Website",
-    image: alumni,
+    title: "Melbourne Limolink",
+    image: mll,
     description:
-      "The varsity alumni association serves as a vibrant network connecting graduates, fostering a sense of camaraderie among former students.",
+      "This platform offers a seamless experience for booking cars with ease. Users can select a vehicle for their desired date, browse through a range of available cars, and explore their detailed specifications. Limolink also features exclusive packages, including options for weddings and tours, designed to elevate any special occasion or journey. Additionally, users can read reviews to ensure they make the best choice for their travel needs.",
   },
   {
     id: 3,
-    title: "Social Book Server",
-    image: media,
+    title: "Permisgo",
+    image: permisgo,
     description:
-      "Social media connects people worldwide, facilitating instant communication and information sharing. However, it also raises concerns about privacy, misinformation, and the impact on mental health.",
+    "This platform serves as an all-encompassing solution for both learning and teaching driving in France. Users can enhance their driving skills through comprehensive lessons, quizzes, and practice tests to achieve the highest scores. Students have the flexibility to book experienced instructors for practical driving lessons, with the option to learn both manual and automatic vehicles. The organization also manages the registration process for the official driving exam, ensuring students are fully supported from enrollment to reaching the exam center for their test.",
   },
 ];
 
@@ -60,14 +60,14 @@ const Item = ({ item }) => {
   // navigate details page
   const navigate = useNavigate();
   const projectDetails = (title) => {
-    if (title === "Blog Website") {
-      navigate("/details/blog");
+    if (title === "Hillside Islamic Center") {
+      navigate("/details/hic");
     }
-    if (title === "HSTU Alumni Website") {
-      navigate("/details/alumni");
+    if (title === "Melbourne Limolink") {
+      navigate("/details/mll");
     }
-    if (title === "Social Book Server") {
-      navigate("/details/social-media");
+    if (title === "Permisgo") {
+      navigate("/details/permisgo");
     }
   };
 
